@@ -17,11 +17,15 @@ namespace JRAssignment1PROG2370
         int rows = 0;
         int columns = 0;
 
-        private struct DynamicPictureBox{
+        public struct DynamicPictureBox{
             int pictureValue;
-            PictureBox[,] pba;
+            PictureBox dynamicPB;
 
-
+            public DynamicPictureBox(PictureBox pb, int picValue)
+            {
+                pictureValue = picValue;
+                dynamicPB = pb;
+            }
         }
         public DesignForm()
         {
